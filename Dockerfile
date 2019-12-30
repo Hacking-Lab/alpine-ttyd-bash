@@ -8,4 +8,4 @@ RUN apk add --update ttyd && \
 ADD root /
 
 # Expose the ports for nginx
-EXPOSE 80
+EXPOSE 7681
