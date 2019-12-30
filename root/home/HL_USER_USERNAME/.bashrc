@@ -31,6 +31,6 @@ echo "=============================="
 echo "        Hacking-Lab           "
 echo "=============================="
 
-PATH=/home/siaboperator/bin
+PATH=/home/HL_USER_USERNAME/bin
 export PATH
 
