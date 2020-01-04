@@ -9,8 +9,8 @@ services:
       - "HL_USER_PASSWORD=compass"
       - "HL_ROOT_PASSWORD=dQ0edEdD6dWZMJj"
     env_file:
-      - ./UUID-hobo.env
+      - ./UUID.env
     volumes:
-      - ./UUID-hobo.gn:/goldnugget/UUID-hobo.gn
+      - ./UUID.gn:/goldnugget/UUID.gn
     ports:
       - 7681:7681
