@@ -1,12 +1,13 @@
-# Alpine Base 
-## Introduction
-This is the alpine ttyd web shell bash image of the Hacking-Lab CTF system, based on hackinglab/alpine-base:latest
+# alpine-ttyd
+Alpine Docker Image with ttyd 
+* problem: libwebsockets without -DLWS_WITH_LIBUV=ON breaks ttyd package
+* fixing the problem with https://github.com/void-linux/void-packages/issues/19441
+* fixing the problem with https://gitlab.alpinelinux.org/alpine/aports/-/issues/11936
+* fixing the problem: libwebsockets context creation failed
 
-## Specifications
-* based on alpine latest
-* with s6 startup handling
-* with user creation
-* with or without known passwords for root and non-root user
-* with dynamic ctf flag handling in `environment variables`
-* with dynamic ctf flag handling in `files`
-* provides bash terminal via web shell
+
+Acknowledgment libwebsocket solution
+* fix is based on https://github.com/matti/docker-alpine-libwebsockets-with-libuv
+
+Acknowledgment ttyd 
+* https://github.com/tsl0922/ttyd
