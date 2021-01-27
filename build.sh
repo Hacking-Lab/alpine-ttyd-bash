@@ -1,3 +1,4 @@
+#!/bin/bash
 
 rm -rf ./docker-alpine-libwebsockets-with-libuv
 git clone https://github.com/matti/docker-alpine-libwebsockets-with-libuv.git
@@ -9,6 +10,3 @@ docker build --no-cache -t hackinglab/alpine-ttyd-bash:3.2.0 -t hackinglab/alpin
 
 rm -rf ./docker-alpine-libwebsockets-with-libuv
 
-docker push hackinglab/alpine-ttyd-bash
-docker push hackinglab/alpine-ttyd-bash:3.2
-docker push hackinglab/alpine-ttyd-bash:3.2.0
